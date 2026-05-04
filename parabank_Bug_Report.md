@@ -1,0 +1,8 @@
+## 🐞 Bug Report Summary
+
+| Bug ID | Feature | Title | Description | Steps to Reproduce | Expected Result | Actual Result | Severity | Priority | Status |
+|--------|--------|-------|------------|-------------------|----------------|--------------|----------|----------|--------|
+| BUG-001 | Login | Login allowed with invalid credentials | System allows login with invalid credentials, which is a major security risk. | 1. Go to login page <br> 2. Enter invalid credentials <br> 3. Click login | User should not be able to login and error message should be displayed | User is logged in without any error | 🔴 <br> High | 🔴 <br> High | Open |
+| BUG-002 | Bill Pay | Bill payment allowed with invalid amount | System accepts invalid payment amounts like zero or negative, leading to incorrect financial records. | 1. Go to Bill Pay page <br> 2. Enter payee details with amount = 0 <br> 3. Submit payment | Error message should be shown for invalid amount | Payment is processed successfully | 🔴 <br> High | 🟠 <br> Medium | Open |
+| BUG-003 | Loan Request | Loan approved with invalid down payment | Loan is approved even with negative down payment, which can lead to financial loss. | 1. Go to Loan Request page <br> 2. Enter loan amount and negative down payment <br> 3. Submit request | Loan request should be rejected | Loan is approved with invalid down payment | 🔴 <br> High | 🔴 <br> High | Open |
+| BUG-004 | Customer Care | Form submitted with invalid email | Form accepts invalid email format, which can lead to communication failure. | 1. Go to Customer Care page <br> 2. Enter invalid email (e.g., johndoe@com) <br> 3. Submit form | Validation error should be shown | Form is submitted successfully | 🟠 <br> Medium | 🟡 <br> Low | Open |
